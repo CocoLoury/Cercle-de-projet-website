@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #666;
+    color: #0C2A4A;
     background-color: #fff;
 }
 
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333;
+    color: #0C2A4A;
 }
 
 h2 {
@@ -272,13 +272,33 @@ a>.img-responsive {
 **************************/
 
 #about-us {
-    background-image: url(../images/about-bg.jpg);
-    padding: 60px 0;
+    /*background-image: url(../images/about-bg.jpg);*/
+    padding: 0;
 }
 
-#about-us h2 {
+#about-us .half {
+    padding: 100px 60px;
+}
+
+#about-us h3 {
     margin-top: 0;
-    color: #fff;
+    text-align: center;
+}
+
+#about-us li{
+    padding-bottom: 10px;
+    line-height: 1;
+    padding-right: 50px;
+}
+#about-us .img-center{
+  position: absolute;
+  height: 55%;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  left: 0;
+  right: 0;
 }
 
 #about-us .lead {
@@ -403,3 +423,42 @@ a>.img-responsive {
     margin-bottom: 15px;
     color: #999;
 }
+
+/*Colors*/
+.bg-darkblue{
+  background-color: #0C2A4A;
+  color: white;
+}
+.bg-lightblue{
+  background-color: #80A7BF;
+  color: white;
+}
+.bg-nude{
+  background-color: #DBB065;
+  color: white;
+}
+
+.bg-darkblue h1,.bg-darkblue h2,.bg-darkblue h3,.bg-darkblue h4,.bg-darkblue h5,.bg-darkblue h6,
+.bg-lightblue h1,.bg-lightblue h2,.bg-lightblue h3,.bg-lightblue h4,.bg-lightblue h5,.bg-lightblue h6,
+.bg-nude h1,.bg-nude h2,.bg-nude h3,.bg-nude h4,.bg-nude h5,.bg-nude h6{
+  color: white;
+}
+
+/*responsive design*/
+
+.d-md-none{
+  display: block;
+}
+.d-xs-none{
+  display:none;
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .d-md-none{
+    display: none;
+  }
+  .d-xs-none{
+    display:block;
+  }
+}
+

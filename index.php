@@ -25,7 +25,7 @@
             <?php include("partials/nav.html"); ?>
         </nav>
         <main>         
-            <section id="about-us" class="parallax">
+            <section id="about-us" >
                 <?php include("views/about-us.html"); ?>
             </section>
             <section id="team">
