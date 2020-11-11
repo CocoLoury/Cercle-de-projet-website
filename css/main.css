@@ -148,6 +148,9 @@ a>.img-responsive {
     .question .col-md-7 {
         transform: translateY(25%);
     }
+    .visite {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -506,4 +509,24 @@ a>.img-responsive {
 .question .col-md-7 h4 {
     color: #8C8C8C;
     margin-bottom: 30px;
+}
+
+/*************************
+*********visite CSS*********
+**************************/
+
+#visite {
+    background-image: url(../images/visite/institut-G4-bellecourV2.jpg);
+    height: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visite-info h2 {
+    color: white;
+}
+
+.visite-info p {
+    color: white;
+    font-size: large;
 }

@@ -31,6 +31,9 @@
             <section id="about-us" >
                 <?php include("views/about-us.html"); ?>
             </section>
+            <section id="visite" >
+                <?php include("views/visite.html"); ?>
+            </section>
             <section id="team">
                 <?php include("views/team.html"); ?>
             </section>
