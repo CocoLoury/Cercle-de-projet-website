@@ -24,7 +24,10 @@
         <nav>
             <?php include("partials/nav.html"); ?>
         </nav>
-        <main>         
+        <main>  
+            <section id="presentation" >
+                <?php include("views/presentation.html"); ?>
+            </section>       
             <section id="about-us" >
                 <?php include("views/about-us.html"); ?>
             </section>
