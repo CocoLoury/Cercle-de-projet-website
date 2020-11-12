@@ -13,7 +13,6 @@
         <link href="css/main.css" rel="stylesheet" />
         <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet" />
         <link href="css/responsive.css" rel="stylesheet" />
-        <link href="css/mosaique.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="images/favicon.ico" />
     </head>
