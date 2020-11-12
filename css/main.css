@@ -644,13 +644,10 @@ div.folio-overview>img {
     font-size: large;
 }
 
-/*
-**Blog CSS**
-**/
-.espace-bloc{
-  margin-bottom: 40px;
-  text-align: center;
-}
+
+/*************************
+**********Blog CSS********
+**************************/
 
 .post-thumb {
     position: relative;
@@ -685,6 +682,7 @@ div.folio-overview>img {
 
 #post-carousel .carousel-indicators {
     bottom: 3px;
+    left: 90%;
 }
 
 .blog-left-control,
@@ -699,22 +697,15 @@ div.folio-overview>img {
 
 .blog-left-control {
     left: 0;
-    color: #0c2a4a;
 }
 
 .blog-right-control {
     right: 0;
-    color: #0c2a4a;
 }
 
 .blog-left-control:hover,
 .blog-right-control:hover {
-    color: #000;
-}
-
-.blog-left-control:focus,
-.blog-right-control:focus {
-    color: #000;
+    color: #fff;
 }
 
 .entry-header h3 a {
@@ -761,36 +752,4 @@ div.folio-overview>img {
 
 .btn-loadmore:hover {
     color: #fff;
-}
-
-.item > .img-responsive{
-    max-height: 300px;
-    min-height: 300px;
-    margin: auto;
-}
-
-h3{
-  color: #000;
-}
-
-.bouton{
-  width: max-content;
-  padding: 10px;
-  margin: auto;
-  border-radius: 15px;
-  background-color: #80a7bf;
-  transition: 1s;
-}
-
-.bouton a{
-  color: #fff;
-}
-
-.bouton a:hover{
-  color: #fff;
-}
-
-.bouton:hover{
-  transform: scale(1.1);
-  background-color: #3c546e
 }
