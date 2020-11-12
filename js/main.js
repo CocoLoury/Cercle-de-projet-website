@@ -65,9 +65,6 @@ jQuery(function($) {
         new WOW().init();
     }
 
-    //smoothScroll
-    smoothScroll.init();
-
     //Countdown
     $('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
