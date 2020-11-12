@@ -95,7 +95,7 @@ section {
 }
 
 .heading {
-    padding-bottom: 90px;
+    padding-bottom: 3rem;
 }
 
 .preloader {
@@ -306,20 +306,21 @@ a>.img-responsive {
     text-align: center;
 }
 
-#about-us li{
+#about-us li {
     padding-bottom: 10px;
     line-height: 1;
     padding-right: 50px;
 }
-#about-us .img-center{
-  position: absolute;
-  height: 55%;
-  z-index: 5;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  left: 0;
-  right: 0;
+
+#about-us .img-center {
+    position: absolute;
+    height: 55%;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
 }
 
 #about-us .lead {
@@ -445,34 +446,57 @@ a>.img-responsive {
     color: #999;
 }
 
+
 /*Colors*/
-.bg-darkblue{
-  background-color: #0C2A4A;
-  color: white;
-}
-.bg-lightblue{
-  background-color: #80A7BF;
-  color: white;
-}
-.bg-nude{
-  background-color: #DBB065;
-  color: white;
+
+.bg-darkblue {
+    background-color: #0C2A4A;
+    color: white;
 }
 
-.bg-darkblue h1,.bg-darkblue h2,.bg-darkblue h3,.bg-darkblue h4,.bg-darkblue h5,.bg-darkblue h6,
-.bg-lightblue h1,.bg-lightblue h2,.bg-lightblue h3,.bg-lightblue h4,.bg-lightblue h5,.bg-lightblue h6,
-.bg-nude h1,.bg-nude h2,.bg-nude h3,.bg-nude h4,.bg-nude h5,.bg-nude h6{
-  color: white;
+.bg-lightblue {
+    background-color: #80A7BF;
+    color: white;
 }
+
+.bg-nude {
+    background-color: #DBB065;
+    color: white;
+}
+
+.bg-darkblue h1,
+.bg-darkblue h2,
+.bg-darkblue h3,
+.bg-darkblue h4,
+.bg-darkblue h5,
+.bg-darkblue h6,
+.bg-lightblue h1,
+.bg-lightblue h2,
+.bg-lightblue h3,
+.bg-lightblue h4,
+.bg-lightblue h5,
+.bg-lightblue h6,
+.bg-nude h1,
+.bg-nude h2,
+.bg-nude h3,
+.bg-nude h4,
+.bg-nude h5,
+.bg-nude h6 {
+    color: white;
+}
+
 
 /*responsive design*/
 
-.d-md-none{
-  display: block;
+.d-md-none {
+    display: block;
 }
-.d-xs-none{
-  display:none;
+
+.d-xs-none {
+    display: none;
 }
+
+
 /* // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
   .d-md-none{
@@ -482,6 +506,7 @@ a>.img-responsive {
     display:block;
   }
 } */
+
 
 /*************************
 *********Presentation CSS*********
@@ -511,6 +536,7 @@ a>.img-responsive {
     margin-bottom: 30px;
 }
 
+
 /*************************
 *********visite CSS*********
 **************************/
@@ -522,6 +548,7 @@ a>.img-responsive {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .visite-info h2 {
     color: white;
 }
