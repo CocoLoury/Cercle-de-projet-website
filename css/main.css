@@ -503,6 +503,9 @@ div.folio-overview>img {
 .presentation .half h3 {
     margin: 2rem;
 }
+.presentation .container .row{
+    margin: 6rem;
+}
 .presentation .container-fluid {
     margin: 6rem 0;
 }
@@ -710,7 +713,7 @@ div.folio-overview>img {
     }
     .presentation .half-content {
         width: 55%;
-     }
+    }
 }
 
 @media (max-width: 576px) {
