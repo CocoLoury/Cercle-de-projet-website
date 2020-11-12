@@ -33,7 +33,7 @@
             <section id="portfolio" >
                 <?php include("views/snapchat.html"); ?>
             </section>
-            <section id="visite" >
+            <section id="visite" class="parallax" >
                 <?php include("views/visite.html"); ?>
             </section>
             <section id="team">
