@@ -151,13 +151,20 @@ a>.img-responsive {
     .visite {
         margin-top: 100px;
     }
+    .d-xs-none {
+        display: block;
+    }
 }
 
 @media (max-width: 992px) {
     .question {
         text-align: center;
     }
+    .d-xs-none {
+        display: none;
+    }
 }
+
 
 #home-slider {
     overflow: hidden;
@@ -289,71 +296,66 @@ a>.img-responsive {
 
 
 /*************************
-********About CSS*******
+********Qui suis-je CSS*******
 **************************/
 
-#about-us {
-    /*background-image: url(../images/about-bg.jpg);*/
-    padding: 0;
+/*.qui-suis-je .row{
+  margin: 0;
+}*/
+
+.qui-suis-je h3 {
+    text-align: center;
+    font-weight: bold;
+}
+.qui-suis-je .half {
+    padding: 9%;
 }
 
-#about-us .half {
-    padding: 100px 60px;
-}
-
-#about-us h3 {
-    margin-top: 0;
+.qui-suis-je h2{
+    margin: 4%;
     text-align: center;
 }
 
-#about-us li {
-    padding-bottom: 10px;
+.qui-suis-je li {
+    padding-bottom: 0.5rem;
     line-height: 1;
-    padding-right: 50px;
+    /*padding-right: 50px;*/
 }
 
-#about-us .img-center {
+.qui-suis-je .img-center {
     position: absolute;
-    height: 55%;
     z-index: 5;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     left: 0;
     right: 0;
+    height: 35rem;
+    margin-top: 3%;
 }
 
-#about-us .lead {
-    font-size: 16px;
-    margin-bottom: 10px;
+
+
+/*responsive design*/
+
+/*@media (max-width: 767px) {
+  .d-l-none {
+      display: none;
+  }
+  .d-xs-none {
+      display: none;
+  }
 }
 
-#about-us h1 {
-    margin-bottom: 30px;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  
+ .d-l-none{
+      display: none;
+  }
+  .d-xs-none{
+    display: none;
+  }
 }
-
-.progress {
-    height: 20px;
-    background-color: #fff;
-    border-radius: 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    margin-bottom: 25px;
-}
-
-.progress-bar {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    text-align: right;
-    padding-right: 12px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.progress .progress-bar.six-sec-ease-in-out {
-    -webkit-transition: width 2s ease-in-out;
-    transition: width 2s ease-in-out;
-}
+*/
 
 
 /*************************
@@ -486,26 +488,6 @@ a>.img-responsive {
 }
 
 
-/*responsive design*/
-
-.d-md-none {
-    display: block;
-}
-
-.d-xs-none {
-    display: none;
-}
-
-
-/* // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-  .d-md-none{
-    display: none;
-  }
-  .d-xs-none{
-    display:block;
-  }
-} */
 
 
 /*************************
