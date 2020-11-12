@@ -24,19 +24,23 @@
         <nav>
             <?php include("partials/nav.html"); ?>
         </nav>
-        <main>  
+        <main>
             <section id="presentation" >
                 <?php include("views/presentation.html"); ?>
-            </section>       
+            </section>
             <section id="about-us" >
                 <?php include("views/about-us.html"); ?>
             </section>
             <section id="visite" >
                 <?php include("views/visite.html"); ?>
             </section>
+            <section id="evenements">
+                <?php include("views/evenements.html"); ?>
+            </section>
             <section id="team">
                 <?php include("views/team.html"); ?>
             </section>
+
         </main>
         <footer id="footer">
             <?php include("partials/footer.html"); ?>

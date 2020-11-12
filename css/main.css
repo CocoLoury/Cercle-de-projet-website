@@ -498,7 +498,7 @@ a>.img-responsive {
 
 
 /* // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .d-md-none{
     display: none;
   }
