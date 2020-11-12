@@ -9,7 +9,6 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/animate.min.css" rel="stylesheet" />
         <link href="css/font-awesome.min.css" rel="stylesheet" />
-        <link href="css/lightbox.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
         <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet" />
         <link href="css/responsive.css" rel="stylesheet" />
@@ -31,6 +30,9 @@
             <section id="qui-suis-je" >
                 <?php include("views/qui-suis-je.html"); ?>
             </section>
+            <section id="portfolio" >
+                <?php include("views/snapchat.html"); ?>
+            </section>
             <section id="visite" >
                 <?php include("views/visite.html"); ?>
             </section>
@@ -46,10 +48,8 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.inview.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/mousescroll.js"></script>
-        <script type="text/javascript" src="js/smoothscroll.js"></script>
+       
         <script type="text/javascript" src="js/jquery.countTo.js"></script>
-        <script type="text/javascript" src="js/lightbox.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
