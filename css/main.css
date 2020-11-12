@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #0C2A4A;
     background-color: #fff;
@@ -12,20 +12,24 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
     color: #0C2A4A;
 }
-
+h1{
+    font-size: 5rem;
+}
 h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
+    color: #DBB065;
+    text-transform: uppercase;
 }
 
 .parallax {
@@ -63,11 +67,21 @@ h3 {
     border: 0;
     border-radius: 0;
 }
-
+.btn.btn-primary {
+    background-color: #80A7BF;
+}
 .btn.btn-primary:hover {
-    background-color: #017fb5;
+    background-color: #80A7BF;
 }
 
+.home-logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
     outline: none;
@@ -91,7 +105,7 @@ a:hover {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 8rem 0 4rem 0;
 }
 
 .heading {
@@ -122,17 +136,17 @@ section {
 }
 
 a>.img-responsive {
-    max-width: 5rem;
+    max-height: 5rem;
     display: inline;
     margin: 1rem;
 }
 
 
 /*************************
-********Home CSS**********
+****Responsive Design CSS****
 **************************/
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
     #home-slider .row {
         transform: translateY(25%);
     }
@@ -148,22 +162,26 @@ a>.img-responsive {
     .question .col-md-7 {
         transform: translateY(25%);
     }
-    .visite {
-        margin-top: 100px;
-    }
     .d-xs-none {
         display: block;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     .question {
         text-align: center;
     }
     .d-xs-none {
         display: none;
     }
+    .carousel .row{
+        text-align: center;
+    }
 }
+
+/*************************
+********Home CSS**********
+**************************/
 
 #home-slider {
     overflow: hidden;
@@ -185,21 +203,9 @@ a>.img-responsive {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-
-.caption .btn-start {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 14px 40px;
-    border: 1px solid #6e6d6c;
-    border-radius: 4px;
-    margin-top: 40px;
-}
-
-.caption .btn-start:hover {
-    color: #fff
-}
-
+.carousel img{
+    max-height: 70vh;
+} 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -295,7 +301,7 @@ a>.img-responsive {
 
 
 /*************************
-********portfolio CSS*****
+********portfolio/Snapchat CSS*****
 **************************/
 
 #portfolio .container-fluid,
@@ -306,6 +312,10 @@ a>.img-responsive {
 
 #portfolio .folio-item {
     position: relative;
+}
+#portfolio .col-xs-6{
+    padding-right: 0;
+    padding-left:0;
 }
 
 #portfolio .overlay {
@@ -430,12 +440,12 @@ div.folio-overview>img {
 }
 
 
-/********Qui suis-je CSS*******
+/**************************
+*****Qui suis-je CSS*******
 **************************/
 
 .qui-suis-je h3 {
     text-align: center;
-    font-weight: bold;
 }
 
 .qui-suis-je .half {
@@ -468,14 +478,15 @@ div.folio-overview>img {
 *********Team CSS*********
 **************************/
 
-#team {
-    padding-top: 0;
+
+
+.team-member {
+    margin-bottom: 5rem;
 }
 
-.team-members {
-    margin-bottom: 25px;
+.team-member h3 {
+    color:#0C2A4A;
 }
-
 .social-icons {
     margin-top: 1rem;
     text-align: center;
@@ -555,7 +566,9 @@ div.folio-overview>img {
 }
 
 
-/*Colors*/
+/*************************
+*********Colors CSS*********
+**************************/
 
 .bg-darkblue {
     background-color: #0C2A4A;
@@ -620,6 +633,7 @@ div.folio-overview>img {
 .question .col-md-7 h4 {
     color: #8C8C8C;
     margin-bottom: 30px;
+    margin-top: 3rem;
 }
 
 
@@ -628,15 +642,16 @@ div.folio-overview>img {
 **************************/
 
 #visite {
-    background-image: url(../images/visite/institut-G4-bellecourV2.jpg);
-    height: 100%;
+    background-image: url(../images/visite/3D_Salle_Bellecour.jpg);
     max-width: 100%;
+    padding:20vh 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.visite-info h2 {
-    color: white;
+.visite h2, 
+.visite p, 
+.visite .btn{
+    color: #0C2A4A;
 }
 
 .visite-info p {
