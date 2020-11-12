@@ -151,13 +151,20 @@ a>.img-responsive {
     .visite {
         margin-top: 100px;
     }
+    .d-xs-none {
+        display: block;
+    }
 }
 
 @media (max-width: 992px) {
     .question {
         text-align: center;
     }
+    .d-xs-none {
+        display: none;
+    }
 }
+
 
 #home-slider {
     overflow: hidden;
@@ -310,11 +317,8 @@ a>.img-responsive {
     bottom: -100%;
     height: 0;
     position: absolute;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
+
 
 .overlay .overlay-content {
     display: table;
@@ -325,6 +329,7 @@ a>.img-responsive {
 .overlay .overlay-text {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
 
 .overlay .folio-info {
@@ -421,6 +426,41 @@ a>.img-responsive {
 
 div.folio-overview>img {
     width: 10rem;
+}
+
+
+/********Qui suis-je CSS*******
+**************************/
+.qui-suis-je h3 {
+    text-align: center;
+    font-weight: bold;
+}
+.qui-suis-je .half {
+    padding: 9%;
+}
+
+.qui-suis-je h2{
+    margin: 4%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.qui-suis-je li {
+    padding-bottom: 0.5rem;
+    line-height: 1;
+    
+}
+.qui-suis-je .img-center {
+    position: absolute;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 35rem;
+    margin-top: 3%;
 }
 
 
@@ -554,26 +594,6 @@ div.folio-overview>img {
 }
 
 
-/*responsive design*/
-
-.d-md-none {
-    display: block;
-}
-
-.d-xs-none {
-    display: none;
-}
-
-
-/* // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-  .d-md-none{
-    display: none;
-  }
-  .d-xs-none{
-    display:block;
-  }
-} */
 
 
 /*************************
