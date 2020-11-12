@@ -28,8 +28,8 @@
             <section id="presentation" >
                 <?php include("views/presentation.html"); ?>
             </section>       
-            <section id="about-us" >
-                <?php include("views/about-us.html"); ?>
+            <section id="qui-suis-je" >
+                <?php include("views/qui-suis-je.html"); ?>
             </section>
             <section id="visite" >
                 <?php include("views/visite.html"); ?>
