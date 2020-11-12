@@ -32,47 +32,33 @@ h3 {
     text-transform: uppercase;
 }
 
-.parallax {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+/*******************
+******Boutons********
+********************/
 
-.parallax,
-.parallax h1,
-.parallax h2,
-.parallax h3,
-.parallax h4,
-.parallax h5,
-.parallax h6 {
+.bouton{
+    width: max-content;
+    padding: 10px 25px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #80a7bf;
+    transition: 1s;
+    border: none;
+}
+.bouton a{
     color: #fff;
 }
-
-.parallax input[type="text"],
-.parallax input[type="text"]:hover,
-.parallax input[type="email"],
-.parallax input[type="email"]:hover,
-.parallax input[type="url"],
-.parallax input[type="url"]:hover,
-.parallax input[type="password"],
-.parallax input[type="password"]:hover,
-.parallax textarea,
-.parallax textarea:hover {
-    font-weight: 300;
+.bouton a:hover{
     color: #fff;
 }
+.bouton:hover{
+    transform: scale(1.1);
+    background-color: #3c546e 
+}
 
-.btn {
-    border: 0;
-    border-radius: 0;
-}
-.btn.btn-primary {
-    background-color: #80A7BF;
-}
-.btn.btn-primary:hover {
-    background-color: #80A7BF;
-}
+/*******************
+****** Navbar ********
+********************/
 
 .home-logo{
     color: #fff;
@@ -90,6 +76,9 @@ h3 {
     background: transparent;
 }
 
+/*******************
+****** Général ********
+********************/
 a {
     text-decoration: none;
     -webkit-transition: 300ms;
@@ -112,28 +101,6 @@ section {
     padding-bottom: 3rem;
 }
 
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999999;
-    background: #fff;
-}
-
-.preloader>i {
-    position: absolute;
-    font-size: 36px;
-    line-height: 36px;
-    top: 50%;
-    left: 50%;
-    height: 36px;
-    width: 36px;
-    margin-top: -15px;
-    margin-left: -15px;
-    display: inline-block;
-}
 
 a>.img-responsive {
     max-height: 5rem;
@@ -142,45 +109,11 @@ a>.img-responsive {
 }
 
 
-/*************************
-****Responsive Design CSS****
-**************************/
 
-@media (min-width: 576px) {
-    #home-slider .row {
-        transform: translateY(25%);
-    }
-    .presentation {
-        margin-top: 100px;
-    }
-    .question {
-        margin-left: 5%;
-    }
-    .question #image {
-        text-align: right;
-    }
-    .question .col-md-7 {
-        transform: translateY(25%);
-    }
-    .d-xs-none {
-        display: block;
-    }
-}
 
-@media (max-width: 576px) {
-    .question {
-        text-align: center;
-    }
-    .d-xs-none {
-        display: none;
-    }
-    .carousel .row{
-        text-align: center;
-    }
-}
 
 /*************************
-********Home CSS**********
+********Header CSS**********
 **************************/
 
 #home-slider {
@@ -440,39 +373,6 @@ div.folio-overview>img {
 }
 
 
-/**************************
-*****Qui suis-je CSS*******
-**************************/
-
-.qui-suis-je h3 {
-    text-align: center;
-}
-
-.qui-suis-je .half {
-    padding: 9%;
-}
-
-.qui-suis-je h2 {
-    margin: 4%;
-    text-align: center;
-}
-
-.qui-suis-je li {
-    padding-bottom: 0.5rem;
-    line-height: 1;
-}
-
-.qui-suis-je .img-center {
-    position: absolute;
-    z-index: 5;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    height: 35rem;
-    margin-top: 3%;
-}
-
 
 /*************************
 *********Team CSS*********
@@ -510,47 +410,27 @@ div.folio-overview>img {
 
 .social-icons ul li a {
     color: #fff;
-    background-color: #0C2A4A;
+    background-color: #80A7BF;
     height: 36px;
     width: 36px;
     line-height: 36px;
     display: block;
     font-size: 16px;
+    border-radius: 36px;
     opacity: 0.8;
 }
-
 .social-icons ul li a:hover {
     opacity: 1;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
-
-.team-member {
-    text-align: center;
-    color: #333;
-    font-size: 14px;
-}
-
-.team-member:hover .social-icons ul li a.facebook {
-    background-color: #3b5999;
-}
-
-.team-member:hover .social-icons ul li a.twitter {
-    background-color: #2ac6f7;
-}
-
-.team-member:hover .social-icons ul li a.dribbble {
-    background-color: #ff5b92;
-}
-
 .team-member:hover .social-icons ul li a.linkedin {
-    background-color: #036dc0;
+    background-color: #3c546e;
 }
 
-.team-member:hover .social-icons ul li a.rss {
-    background-color: #ff6b00;
+.team-member .member-info{
+    text-align: center;
 }
-
 #team .img-responsive {
     width: 100%;
 }
@@ -606,6 +486,12 @@ div.folio-overview>img {
     color: white;
 }
 
+.text-darkblue{
+    color: #0C2A4A;
+}
+.text-white{
+    color: white;
+}
 
 /*************************
 *********Presentation CSS*********
@@ -614,49 +500,91 @@ div.folio-overview>img {
 .presentation {
     text-align: center;
 }
-
-.presentation h1 {
-    color: #071126;
+.presentation .half h3 {
+    margin: 2rem;
 }
-
-.presentation h3 {
-    color: #DBB065;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+.presentation .container-fluid {
+    margin: 6rem 0;
 }
-
-.presentation h4 {
-    color: #8C8C8C;
-    margin-bottom: 30px;
+.presentation .container-fluid .row {
+    overflow: hidden;
 }
-
-.question .col-md-7 h4 {
-    color: #8C8C8C;
-    margin-bottom: 30px;
-    margin-top: 3rem;
+.presentation .half {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
-
-
+.presentation .half-content {
+    padding-top: 12rem ;
+    padding-bottom: 12rem;
+    margin: auto;
+}
+.presentation .half li {
+    padding-bottom: 0.5rem;
+    line-height: 1;
+}
+.presentation .img-center {
+    position: absolute;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 35rem;
+    margin-top: 3%;
+}
+.presentation blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+}
 /*************************
 *********visite CSS*********
 **************************/
 
+.parallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.parallax,
+.parallax h1,
+.parallax h2,
+.parallax h3,
+.parallax h4,
+.parallax h5,
+.parallax h6 {
+    color: #fff;
+}
+
+.parallax input[type="text"],
+.parallax input[type="text"]:hover,
+.parallax input[type="email"],
+.parallax input[type="email"]:hover,
+.parallax input[type="url"],
+.parallax input[type="url"]:hover,
+.parallax input[type="password"],
+.parallax input[type="password"]:hover,
+.parallax textarea,
+.parallax textarea:hover {
+    font-weight: 300;
+    color: #fff;
+}
+
+
 #visite {
-    background-image: url(../images/visite/3D_Salle_Bellecour.jpg);
+    background-image: url(../images/visite/3D_Salle.jpg);
     max-width: 100%;
     padding:20vh 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.visite h2, 
-.visite p, 
-.visite .btn{
-    color: #0C2A4A;
-}
-
 .visite-info p {
-    color: white;
-    font-size: large;
+    margin-bottom:2rem ;
 }
 
 /*
@@ -759,24 +687,6 @@ div.folio-overview>img {
     font-size: 14px;
 }
 
-.load-more {
-    display: block;
-    text-align: center;
-    margin-top: 70px;
-}
-
-.btn-loadmore {
-    border: 1px solid #f2f2f2;
-    color: #666666;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 125px;
-    text-transform: uppercase;
-}
-
-.btn-loadmore:hover {
-    color: #fff;
-}
 
 .item > .img-responsive{
     max-height: 300px;
@@ -784,28 +694,33 @@ div.folio-overview>img {
     margin: auto;
 }
 
-h3{
-  color: #000;
+/*************************
+****Responsive Design CSS****
+**************************/
+
+@media (min-width: 576px) {
+    #home-slider .row {
+        transform: translateY(25%);
+    }
+    .image-question {
+        text-align: right;
+    }
+    .d-xs-none {
+        display: block;
+    }
+    .presentation .half-content {
+        width: 55%;
+     }
 }
 
-.bouton{
-  width: max-content;
-  padding: 10px;
-  margin: auto;
-  border-radius: 15px;
-  background-color: #80a7bf;
-  transition: 1s;
-}
-
-.bouton a{
-  color: #fff;
-}
-
-.bouton a:hover{
-  color: #fff;
-}
-
-.bouton:hover{
-  transform: scale(1.1);
-  background-color: #3c546e
+@media (max-width: 576px) {
+    .question {
+        text-align: center;
+    }
+    .d-xs-none {
+        display: none;
+    }
+    .carousel .row{
+        text-align: center;
+    }
 }
