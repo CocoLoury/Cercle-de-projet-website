@@ -17,9 +17,11 @@ h5,
 h6 {
     color: #0C2A4A;
 }
-h1{
+
+h1 {
     font-size: 5rem;
 }
+
 h2 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -32,11 +34,12 @@ h3 {
     text-transform: uppercase;
 }
 
+
 /*******************
 ******Boutons********
 ********************/
 
-.bouton{
+.bouton {
     width: max-content;
     padding: 10px 25px;
     margin: auto;
@@ -45,22 +48,26 @@ h3 {
     transition: 1s;
     border: none;
 }
-.bouton a{
+
+.bouton a {
     color: #fff;
 }
-.bouton a:hover{
+
+.bouton a:hover {
     color: #fff;
 }
-.bouton:hover{
+
+.bouton:hover {
     transform: scale(1.1);
-    background-color: #3c546e 
+    background-color: #3c546e
 }
+
 
 /*******************
 ****** Navbar ********
 ********************/
 
-.home-logo{
+.home-logo {
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
@@ -68,6 +75,7 @@ h3 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
     outline: none;
@@ -76,9 +84,11 @@ h3 {
     background: transparent;
 }
 
+
 /*******************
 ****** Général ********
 ********************/
+
 a {
     text-decoration: none;
     -webkit-transition: 300ms;
@@ -101,15 +111,11 @@ section {
     padding-bottom: 3rem;
 }
 
-
 a>.img-responsive {
     max-height: 5rem;
     display: inline;
     margin: 1rem;
 }
-
-
-
 
 
 /*************************
@@ -136,9 +142,11 @@ a>.img-responsive {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.carousel img{
+
+.carousel img {
     max-height: 70vh;
-} 
+}
+
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -246,9 +254,10 @@ a>.img-responsive {
 #portfolio .folio-item {
     position: relative;
 }
-#portfolio .col-xs-6{
+
+#portfolio .col-xs-6 {
     padding-right: 0;
-    padding-left:0;
+    padding-left: 0;
 }
 
 #portfolio .overlay {
@@ -373,7 +382,6 @@ div.folio-overview>img {
 }
 
 
-
 /*************************
 *********Team CSS*********
 **************************/
@@ -383,8 +391,9 @@ div.folio-overview>img {
 }
 
 .team-member h3 {
-    color:#0C2A4A;
+    color: #0C2A4A;
 }
+
 .social-icons {
     margin-top: 1rem;
     text-align: center;
@@ -417,18 +426,21 @@ div.folio-overview>img {
     border-radius: 36px;
     opacity: 0.8;
 }
+
 .social-icons ul li a:hover {
     opacity: 1;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
+
 .team-member:hover .social-icons ul li a.linkedin {
     background-color: #3c546e;
 }
 
-.team-member .member-info{
+.team-member .member-info {
     text-align: center;
 }
+
 #team .img-responsive {
     width: 100%;
 }
@@ -484,12 +496,14 @@ div.folio-overview>img {
     color: white;
 }
 
-.text-darkblue{
+.text-darkblue {
     color: #0C2A4A;
 }
-.text-white{
+
+.text-white {
     color: white;
 }
+
 
 /*************************
 *********Presentation CSS*********
@@ -498,31 +512,39 @@ div.folio-overview>img {
 .presentation {
     text-align: center;
 }
+
 .presentation .half h3 {
     margin: 2rem;
 }
-.presentation .container .row{
+
+.presentation .container .row {
     margin: 6rem;
 }
+
 .presentation .container-fluid {
     margin: 6rem 0;
 }
+
 .presentation .container-fluid .row {
     overflow: hidden;
 }
+
 .presentation .half {
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
+
 .presentation .half-content {
-    padding-top: 12rem ;
+    padding-top: 12rem;
     padding-bottom: 12rem;
     margin: auto;
 }
+
 .presentation .half li {
     padding-bottom: 0.5rem;
     line-height: 1;
 }
+
 .presentation .img-center {
     position: absolute;
     z-index: 5;
@@ -533,6 +555,7 @@ div.folio-overview>img {
     height: 35rem;
     margin-top: 3%;
 }
+
 .presentation blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
@@ -540,6 +563,8 @@ div.folio-overview>img {
     border: none;
     font-weight: bold;
 }
+
+
 /*************************
 *********visite CSS*********
 **************************/
@@ -576,24 +601,30 @@ div.folio-overview>img {
     color: #fff;
 }
 
-
 #visite {
     background-image: url(../images/visite/3D_Salle.jpg);
     max-width: 100%;
-    padding:20vh 0;
+    padding: 20vh 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .visite-info p {
-    margin-bottom:2rem ;
+    margin-bottom: 2rem;
 }
+
+div.bouton.visite {
+    margin: 0;
+}
+
 
 /*
 **Blog CSS**
 **/
-.espace-bloc{
-  margin-bottom: 40px;
-  text-align: center;
+
+.espace-bloc {
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .post-thumb {
@@ -688,12 +719,12 @@ div.folio-overview>img {
     font-size: 14px;
 }
 
-
-.item > .img-responsive{
+.item>.img-responsive {
     max-height: 300px;
     min-height: 300px;
     margin: auto;
 }
+
 
 /*************************
 ****Responsive Design CSS****
@@ -712,7 +743,7 @@ div.folio-overview>img {
     .presentation .half-content {
         width: 55%;
     }
-    .hide-br{
+    .hide-br {
         display: none;
     }
     .carousel img {
@@ -727,7 +758,7 @@ div.folio-overview>img {
     .d-xs-none {
         display: none;
     }
-    .carousel .row{
+    .carousel .row {
         text-align: center;
     }
     .carousel img {
