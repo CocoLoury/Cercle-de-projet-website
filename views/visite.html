@@ -20,7 +20,7 @@
         aTelecharger = '<a href="https://drive.google.com/file/d/1pS818m8VSevb_P0qnJ9gxCi5odww0Zmb/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Télécharger l\'' +
         'application </a>';
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        aTelecharger = '<a disabled="disabled"> Vous devez être sur un ordinateur </a>';
+        aTelecharger = '<a disabled="disabled"><i class="fa fa-times"></i> Vous devez être sur un ordinateur </a>';
     }
     divBoutton.insertAdjacentHTML('beforeend', aTelecharger);
 </script>
