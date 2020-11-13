@@ -770,4 +770,7 @@ div.bouton.visite>a[disabled="disabled"] {
         max-height: 50vh;
         margin-top: 1rem;
     }
+    .overlay .folio-info h3 {
+        font-size: 12px;
+    }
 }
