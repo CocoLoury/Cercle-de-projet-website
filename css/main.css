@@ -732,5 +732,6 @@ div.folio-overview>img {
     }
     .carousel img {
         max-height: 50vh;
+        margin-top: 1rem;
     }
 }
