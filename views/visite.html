@@ -8,10 +8,21 @@
                         Télécharger notre application, Bob vous fera la visite de l'amphitéâtre Bellecour de Lyon.
                     </p>
                     <div class="bouton visite">
-                        <a href="https://drive.google.com/file/d/1pS818m8VSevb_P0qnJ9gxCi5odww0Zmb/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Télécharger l'application</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    let divBoutton = document.querySelector('div.bouton.visite'),
+        aTelecharger = '<a href="https://drive.google.com/file/d/1pS818m8VSevb_P0qnJ9gxCi5odww0Zmb/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Télécharger l\'' +
+        'application </a>';
+    console.log(aTelecharger);
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        aTelecharger = '<a title="Vous devez être sur un ordinateur pour accéder à la visite virtuelle" disabled="disabled"><i class="fa fa-download"></i> Télécharger l\'' +
+            'application </a>';
+    }
+    divBoutton.insertAdjacentHTML('beforeend', aTelecharger);
+</script>

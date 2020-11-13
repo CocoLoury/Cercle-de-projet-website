@@ -617,6 +617,11 @@ div.bouton.visite {
     margin: 0;
 }
 
+div.bouton.visite>a[disabled="disabled"] {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
 
 /*
 **Blog CSS**
