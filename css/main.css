@@ -378,8 +378,6 @@ div.folio-overview>img {
 *********Team CSS*********
 **************************/
 
-
-
 .team-member {
     margin-bottom: 5rem;
 }
@@ -714,6 +712,12 @@ div.folio-overview>img {
     .presentation .half-content {
         width: 55%;
     }
+    .hide-br{
+        display: none;
+    }
+    .carousel img {
+        max-height: 70vh;
+    }
 }
 
 @media (max-width: 576px) {
@@ -725,5 +729,8 @@ div.folio-overview>img {
     }
     .carousel .row{
         text-align: center;
+    }
+    .carousel img {
+        max-height: 50vh;
     }
 }
